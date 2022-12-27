@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@keyframes spinDiv {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.container {
+  max-width: 400px;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: scroll;
+  scroll-snap-type: y mandatory;
+  position: relative;
+  background-color: lightgray;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.topBar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  top: 20px;
+  padding: 10px;
+  z-index: 1;
+}
+
+.liveIcon {
+  width: 30px;
+  height: 30px;
+}
+
+.topBarSpan {
+  color: white;
+  font-weight: bold;
+  font-size: large;
+}
+
+.bottomContainer {
+  width: 100%;
+  height: 10%;
+  background-color: black;
+  position: relative;
+  position: sticky;
+  top: 90%;
+  opacity: 0.8;
+  z-index: 3;
+}
+
+.bottomBar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.bottomSpan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: large;
+  margin-bottom: 5px;
+}
+
+.spanText {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.plusIcon {
+  font-size: 40px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.progressBar {
+  width: 100%;
+  height: 5px;
+  background-color: white;
+  position: relative;
+}
+
+.progressBall {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgb(65, 225, 17);
+  position: absolute;
+  margin-top: -3px;
+}
+
+.bodyPart {
+  display: flex;
+  width: 100%;
+  position: absolute;
+  bottom: -45px;
+  align-items: flex-end;
+}
+
+.infoControl {
+  width: 60%;
+  position: absolute;
+  left: 5%;
+  bottom: 12%;
+}
+
+.info {
+  font-size: 20px;
+  color: white;
+  margin-top: 10px;
+}
+
+.header {
+  font-size: 22px;
+}
+
+.music {
+  height: 30px;
+  margin: auto;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  border: lightblue;
+  background-color: rgb(239, 239, 234);
+  opacity: 0.5;
+  margin-top: 10px;
+}
+
+.icon {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  bottom: 12%;
+}
+
+.bodyIconSpan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  margin-top: 15px;
+  color: white;
+  font-weight: bold;
+  position: relative;
+}
+
+.bodyPartSpanText {
+  font-size: 15px;
+}
+
+.circle {
+  font-size: 40px;
+}
+
+.plusControl {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -11px;
+}
+
+.plus {
+  font-size: 10px;
+}
+
+.circleDiv {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: spinDiv infinite 3s linear;
+}
+
+.fa-music {
+  font-size: 20px;
+}
+
+.videoContainer {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  position: relative;
+}
+
+.videoControl {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  scroll-snap-align: start;
+}
+
+.songinfo {
+  opacity: 1;
+  margin: 0 40px;
+}
